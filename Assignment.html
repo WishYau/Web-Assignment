@@ -9,31 +9,31 @@
   </head>
 
   <body>
-    <h2>Restiger Form</h2>
+    <h2>Green Club Restiger Form</h2>
     <form method="post" enctype="multipart/form-data" >
       <input name="Green Club" type="hidden" value="Restiger"/>
       <fieldset>
        <legend>Account information</legend>
         Frist Name :
-        <input name="Name" type="text"/><br />
+        <input name="Name" type="text" required/><br />
         Last Name :
-        <input name="LName" type="text" /><br />
+        <input name="LName" type="text" required/><br />
         Password :
-        <input name="PW" type="password"/><br/>
+        <input name="PW" type="password" required/><br/>
         Password confirm :
-        <input name="RE-PW" type="password"/><br/>
+        <input name="RE-PW" type="password" required/><br/>
         Phone No :
-        <input name="phoneno" type="number" maxlength="8"/><br />
+        <input name="phoneno" type="number" max="8"/><br />
         Email Address :
-        <input name="EmailAddress" type="text"/><br />
+        <input name="EmailAddress" type="text" required/><br />
         Gender:
         <input type="radio" value="" name="Event1" checked />
         Man
         <input type="radio" value="" name="Event2"/>
         Female <br />
         Crdit card number :
-        <input name="CCNum" type="number" maxlength="8"/><br />
-        <input name="CCCNum" type="number" maxlength="3"/><br />
+        <input name="CCNum" type="text" pattern="^[0-9]{12}$" /><br />
+        <input name="CCCNum" type="text" pattern="^[0-9]{3}$"/><br />
         Credit card expiry date:
         <input type="date" /><br />
         Select your image :
