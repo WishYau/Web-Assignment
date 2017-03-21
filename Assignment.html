@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Green Club</title>
+    <style type="text/css">
+      fieldset { border-radius: 10px; }
+    </style>
+  </head>
+
+  <body>
+    <h2>Restiger Form</h2>
+    <form method="post" enctype="multipart/form-data" >
+      <input name="Green Club" type="hidden" value="Restiger"/>
+      <fieldset>
+       <legend>Account information</legend>
+        Frist Name :
+        <input name="Name" type="text"/><br />
+        Last Name :
+        <input name="LName" type="text" /><br />
+        Password :
+        <input name="PW" type="password"/><br/>
+        Password confirm :
+        <input name="RE-PW" type="password"/><br/>
+        Phone No :
+        <input name="phoneno" type="number" maxlength="8"/><br />
+        Email Address :
+        <input name="EmailAddress" type="text"/><br />
+        Gender:
+        <input type="radio" value="" name="Event1" checked />
+        Man
+        <input type="radio" value="" name="Event2"/>
+        Female <br />
+        Crdit card number :
+        <input name="CCNum" type="number" maxlength="8"/><br />
+        <input name="CCCNum" type="number" maxlength="3"/><br />
+        Credit card expiry date:
+        <input type="date" /><br />
+        Select your image :
+        <input type="file" name="image"/><br />
+        
+        
+      </fieldset>
+
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+    </form>
+  </body>
+</html>
